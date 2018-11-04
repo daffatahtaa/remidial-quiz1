@@ -15,7 +15,7 @@ public class Pegawai {
     private String jabatan;
     private String nama;
 
-    public Pegawai(int nip,String jabatan, String nama) {
+    public Pegawai(int nip,String jabatan, String nama) {   
         this.nip = nip;
         this.nama = nama;
         this.jabatan = jabatan;
@@ -33,11 +33,11 @@ public class Pegawai {
         return nama;
     }
 
-    public void setNama(String nama) {
+    public void setNama(String nama) {                          
         this.nama = nama;
     }
     
-    public String info(){
+    public String info(){                                       //info untuk print
         String info = "";
         info +="Nip : " + this.nip + "\n";
         info +="jabatan : "+ this.jabatan+"\n";

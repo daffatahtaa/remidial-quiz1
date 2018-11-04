@@ -16,26 +16,26 @@ public class PesawatMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Pegawai pilot = new Pegawai( 10,"Pilot","Red");
-        Pegawai coPilot = new Pegawai( 11,"Co-Pilot","Blue");
-        Pegawai pramugari = new Pegawai( 101,"Pramugari","Pink");
-        Pegawai pramugari2 = new Pegawai( 102,"pramugari","Yellow");
+        Pegawai pilot = new Pegawai( 10,"Pilot","Red");             //inisiasi pilot
+        Pegawai coPilot = new Pegawai( 11,"Co-Pilot","Blue");       //inisiasi copilot
+        Pegawai pramugari = new Pegawai( 101,"Pramugari","Pink");   //inisiasi pramugari
+        Pegawai pramugari2 = new Pegawai( 102,"pramugari","Yellow");//inisiasi pramugari2
         
-        Penumpang p = new Penumpang("1001", "Mr. Krab");
-        Penumpang p2 = new Penumpang("1002", "Mr. Spongebob");
-        Penumpang p3 = new Penumpang("1003", "Mr. Patrick");
+        Penumpang p = new Penumpang("1001", "Mr. Krab");            //penumpang1
+        Penumpang p2 = new Penumpang("1002", "Mr. Spongebob");      //penumpang2
+        Penumpang p3 = new Penumpang("1003", "Mr. Patrick");        //penumpang3
         Pesawat lion = new Pesawat("737", 4);
         
-        System.out.println(pilot.info());
-        System.out.println(coPilot.info());
-        System.out.println(pramugari.info());
-        System.out.println(pramugari2.info());
+        System.out.println(pilot.info());                           //Print info pilot dari class Pegawai
+        System.out.println(coPilot.info());                         //Print info coPilot dari class Pegawai
+        System.out.println(pramugari.info());                       //Print info pramugari dari class Pegawai
+        System.out.println(pramugari2.info());                      //Print info pramugari2 dari class Pegawai
         
-        lion.setPenumpang(p, 1);
-        lion.setPenumpang(p2, 2);
-        lion.setPenumpang(p3, 3);
+        lion.setPenumpang(p, 1);                                    //setTempat dudukPenumpang
+        lion.setPenumpang(p2, 2);                                   //setTempat dudukPenumpang
+        lion.setPenumpang(p3, 3);                                   //setTempat dudukPenumpang
         
-        System.out.println(lion.info());
+        System.out.println(lion.info());                            //set kode penerbangan dan jumlah kursi
     }
     
 }
