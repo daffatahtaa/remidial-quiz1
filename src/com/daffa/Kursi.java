@@ -11,7 +11,7 @@ package com.daffa;
  * @author Expression daffa is undefined on line 12, column 14 in Templates/Classes/Class.java.
  */
 public class Kursi {
-    String nomer;
+    private String nomer;
     Penumpang penumpang;
 
     public Kursi(String nomer) {
